@@ -1,0 +1,1075 @@
+﻿@charset "UTF-8";
+/* 
+Cliente: Hoteles Colsubsidio
+Proyecto: hotelescolsubsidio.com
+Autor: Andrés Arboleda
+Email: andres.arboleda@grupoone.com
+Fecha: 23 de Marzo de 2011
+*/
+
+/*Generales
+____________________________________________________________________________________________________________________*/
+body { margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; }
+* {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+}
+
+.topnav {
+  display: flex;
+  align-items: start;
+  overflow: hidden;
+  background-color: #033E8C;
+    justify-content: center;
+  align-items: center;
+}
+
+.topnav a {
+
+  color: #FFFFFF;
+  padding: 8px 5px;
+  text-decoration: none;
+  font-size: 12px;
+  border-right: 1px solid #062547;
+  
+}
+
+.topnav a:hover {
+  background-color: #011f5b;
+  color: #FFFFFF;
+}
+
+
+.clear { clear:both;}
+
+/*Cabezote*/
+.cabezote { width:100%; height:70px; background: #004a99;  }
+.zonaLogo { margin:0px auto; width:1024px; height:70px; }
+.LogoColsubsidio { float:left;width:210px; height:70px; }
+.tituloHoteles { float:left;height:70px; width:114px; }
+.btnFaq {  
+	font-size: 12px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: #c6c8ca; 
+	text-decoration:none; 
+	display:block; 
+	width:160px; 
+	height:25px; 
+	float:right; 
+	margin-top: 27px;  
+}
+.btnFaqAqui {   
+    font-size: 12px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: white; 
+	width:139px; 
+	height:25px; 
+	float:right; 
+	margin-top: 22px; 
+}
+.btnFaq:hover { 
+	font-size: 12px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: white; 
+}
+.btnContactenos {
+	font-size: 12px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: #c6c8ca; display:block;  
+	width:89px; 
+	height:25px; 
+	float:right; 
+	margin-top: 27px; 
+    text-decoration:none;
+	padding-left: 19px;
+}
+.btnContactenosAqui {
+	font-size: 12px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: white; 
+	width:89px; 
+	height:25px; 
+	float:right; 
+	margin-top: 22px; 
+}
+.btnContactenos:hover {
+	font-size: 12px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: white;
+}
+.btnMapa { 
+	font-size: 12px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: #c6c8ca; display:block;  
+	width:120px; 
+	height:25px; 
+	float:right; 
+	margin-top: 27px; 
+    text-decoration:none;
+	padding-left: 10px; 
+}
+.btnMapaAqui { 
+	font-size: 12px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: white; 
+	width:94px; 
+	height:25px; 
+	float:right; 
+	margin-top: 22px; 
+}
+.btnMapa:hover { 
+	font-size: 12px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color: white;
+}
+
+.Aqui {
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#212F82;
+}
+
+
+.separadorArriba {width: 1px; height: 25px; float:right; margin-top: 22px;  }
+.audioServicio {width: 171px; height: 25px; float:right; margin-top: 22px;margin-left: 5px; }
+.btnFacebook {width:25px; height:25px; float:right; margin-top: 22px; margin-right: 5px; margin-left:5px; }
+.btnFacebook:hover { background:url(../imagenes/btn_facebook2.gif) }
+.btnTwitter { display:block;width:25px; height:25px; float:right; margin-top: 22px;  }
+.btnTwitter:hover { background:url(../imagenes/btn_twitter2.gif) }.btnYoutube {display:block;width:25px; height:25px; float:right; margin-top: 22px; }.btnYoutube:hover { background:url(../imagenes/btn_Youtube.png) }
+
+/*Menu principal (botones)
+_____________________________*/
+.zonaMenu { width:100%; height:50px; background:#9c1621; background: url(../imagenes/fondo_menu.gif) repeat-x;  }
+.zonaMenu a { color:#FFF; text-decoration:none; }
+.zonaMenu a:hover { color: #9c1621; text-decoration:none; }
+.Menu { margin:0px auto; width:1024px; height:33px; display: flex; justify-content: center; }
+.Menu a {
+	border-right: 1px solid #062547;
+}
+.Menu .last{
+	border: none;
+}
+
+/*Hotel Peñalisa*/
+.btnPenalisa { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat;
+	float:left; 	 
+	width:65px; 
+	height:33px; 
+}
+.btnPenalisa:hover {
+	background-position: 0 -33px;
+}
+.btnPenalisaAqui {
+	background:url(../imagenes/sprite-menu1.png) no-repeat 0 -66px;
+	float:left;
+	width:65px; 
+	height:33px;
+ }
+/*Hotel Bosques de Athán*/
+.btnBosques { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -65px 0;
+	float:left; 	 
+	width:121px; 
+	height:33px;
+}
+.btnBosques:hover {
+	background-position: -65px -33px;	 
+}
+.btnBosquesAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -65px -66px;
+	float:left;  
+	width:121px; 
+	height:33px;
+}
+.btnBosquesAqui:hover {	 }
+
+/*Hotel Lanceros*/
+
+.btnLanceros { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -186px 0;
+	float:left; 	
+	width: 70px; 
+	height: 33px; 
+}
+.btnLanceros:hover {
+	background-position: -186px -33px;
+}
+
+.btnLancerosAqui {
+	background:url(../imagenes/sprite-menu1.png) no-repeat -186px -66px; 	
+	float:left; 
+	width: 70px; 
+	height: 33px; 
+}
+.btnLancerosAqui:hover {}
+
+
+/*Hotel Colonial*/
+.btnColonial {
+	background:url(../imagenes/sprite-menu1.png) no-repeat -256px 0; 
+	float:left; 	 
+	width: 65px; 
+	height: 33px; 
+}
+.btnColonial:hover {
+	background-position: -256px -33px;
+}
+.btnColonialAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -256px -66px;
+	float:left; 
+	width: 65px; 
+	height: 33px; 
+}
+.btnColonialAqui:hover { }
+
+
+/*Hotel Alcaravan*/
+.btnAlcaravan {
+	background:url(../imagenes/sprite-menu1.png) no-repeat -321px 0; 
+	float:left; 	 
+	width:88px; 
+	height:33px;
+}
+.btnAlcaravan:hover {
+	background-position: -321px -33px;
+	 }
+.btnAlcaravanAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -321px -66px; 
+	float:left;  
+	width:88px;
+	height:33px;
+ }
+.btnAlcaravanAqui:hover {
+	 }
+
+/*Hotel Planes*/
+.btnPlanes {
+	background:url(../imagenes/sprite-menu1.png) no-repeat -409px 0;  
+	float:left; 
+	width: 56px;
+	height:33px;
+  }
+.btnPlanes:hover {
+	background-position: -409px -33px;
+	 }
+.btnPlanesAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -409px -66px;
+	float:left;  
+	width: 56px; 
+	height:33px;
+}
+
+.btnPlanesAqui:hover { }
+	 
+
+/*Viajes Colsibsidio*/
+.btnViajesColsubsidio {
+	background:url(../imagenes/sprite-menu1.png) no-repeat -409px 0;  
+	float:left; 
+	width: 56px;
+	height:33px;
+  }
+.btnViajesColsubsidio:hover {
+	background-position: -409px -33px;
+	 }
+.btnViajesColsubsidioAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -409px -66px;
+	float:left;  
+	width: 56px; 
+	height:33px;
+}
+
+.btnViajesColsubsidioAqui:hover { }
+	 
+	 
+/*Hotel Tarifas*/
+.btnTarifas { 
+	float:left; 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -465px 0; 
+	width: 54px;
+	height:33px;
+ }
+.btnTarifas:hover {
+	background-position: -465px -33px;
+	 }
+.btnTarifasAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -465px -66px;
+	float:left;  
+	width: 54px; 
+	height:33px; 
+}
+.btnTarifasAqui:hover { }
+
+
+/*Hotel Reservas*/
+.btnReservas { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -516px 0; 
+	float:left;  
+	width: 69px; 
+	height:33px;
+ }
+.btnReservas:hover { 
+	background-position: -516px -33px; 
+}
+.btnReservasAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -516px -66px;
+	float:left;  
+	width: 69px; 
+	height:33px;
+ }
+	 
+/*Hotel Piscilago*/
+.btnPiscilago {
+	float:left; 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -585px 0; 
+	width:67px; 
+	height:33px;
+	}
+.btnPiscilago:hover {
+	background-position: -585px -33px;
+	 }
+.btnPiscilagoAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -585px -66px;
+	float:left; 
+	width:67px; 
+	height:33px;
+ }
+
+/*Hotel conven*/
+.btnConvenciones { 
+	float:left; 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -652px 0;  
+	width: 98px; 
+	height:33px; 
+}
+.btnConvenciones:hover {
+	background-position: -652px -33px;
+	}
+.btnConvencionesAqui { 
+  background:url(../imagenes/sprite-menu1.png) no-repeat -652px -66px;
+  float:left; 
+  width: 98px;
+  height:33px; 
+  }
+
+/*Hotel Catering*/
+.btnCatering { 
+	 float:left; 
+	 background:url(../imagenes/sprite-menu1.png) no-repeat -746px 0;  
+	 width: 68px; 
+	 height:33px; 
+ }
+.btnCatering:hover { 
+	background-position: -746px -33px;
+ }
+.btnCateringAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -746px -66px; 
+	float:left; 
+	width: 68px; 
+	height:33px;
+ }
+
+/*Hotel Agencia*/
+.btnAgencia { 
+	float:left; 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -805px 0; 
+	width: 118px; 
+	height:33px; 
+}
+.btnAgencia:hover {
+	background-position: -808px -35px;
+	 }
+.btnAgenciaAqui { 
+	background:url(../imagenes/sprite-menu1.png) no-repeat -814px -66px; 
+	float:left;  
+	width: 118px; 
+	height:33px;
+ }
+.btnAgenciaAqui:hover { 
+ }
+
+
+/*Reserve Aquí*/
+
+.btnReservaAqui:hover { background:url(../imagenes/boton-reserva-aqui2.jpg);}
+.btnReservaAqui {float:left; display:block; background:url(../imagenes/boton-reserva-aqui.jpg); width:200px; height:33px; margin-bottom: 13px; margin-left:370px;}
+.btnReservaAqui:hover { background:url(../imagenes/boton-reserva-aqui2.jpg);}
+
+
+
+/*Footer
+.MenuAbajo { margin:0px auto; width:950px; height:19px; background:#b7b7b7; font-size: 10px !important; color:#212f82;  padding-top:6px; text-align:center; clear:both;  }
+.MenuAbajo a { color:#313233; text-decoration:none; font-size: 10px !important; }
+.MenuAbajo a:hover { color: #212f82; text-decoration:none; font-size: 10px !important; }
+.footer { margin:0px auto; background:url(../imagenes/fondo_footer.gif) repeat-x; height: 39px; width: 950px; clear:both; }
+.logoTurismo { float:right; background:url(../imagenes/logo_turismo.gif); width: 125px; height:39px; }
+.creditos { float: left; width: 600px; font-size:12px; color:#d9dbde; font-family:Arial, Helvetica, sans-serif; padding-top:13px; padding-left:10px; }
+.creditos a { color: #d9dbde}
+.creditos:hover a { color:#FFF;}*/
+
+/*Home
+__________________________________________________________________________*/
+
+/*Banner Home y Mini Homes*/
+.galeria { margin:0px auto; width:100%; height:439px;  }
+.banner { margin:0px auto; width:950px; height:367px; }
+.galeriaMini { margin:0px auto; width:950px; height:237px;  }
+.bannerMini { float:left; width:737px; height:237px;   }
+/* Destacados Home */
+.ZonaDestacados { margin:0px auto; width:950px; height:auto; clear:both;}
+.Destacados { float:left; width:315px; height:auto; padding-left:20px; padding-top:20px; padding-bottom:20px; text-decoration:none; }
+.ZonaDestacados h2 { color:#212F82; font-size:16px; font-weight:lighter; }
+.Destacados h2 { color:#212f82; font-size:20px; font-weight:lighter; }
+.Destacados span { color:#212F82; }
+.Destacados:hover h2 { text-decoration:underline; }
+.Destacados:hover p { color:#000 ; }
+.Destacados strong { color:#000; }
+.FotoDestacadoUno {width:315px; height:123px; }
+.FotoDestacadoDos { background:url(../imagenes/foto_02_destacado_home.jpg); width:315px; height:123px; }
+/*Formulario home*/
+.FormularioHome { float:left; width:279px; height:auto; padding-top:20px; padding-bottom:20px; }
+.form-label{ width:200px !important;}
+.form-label-left { width:150px !important; }
+.form-section li { padding:1px;}
+.form-label-right{ width:200px !important; font-family:Arial, Helvetica, sans-serif; color: #666; }
+.form-label-top { font-size:14px; }
+.cajasTexto { background:#F0F0F0; border:1px solid #CCC; width:267px;}
+.botonQuiero { background: url(../imagenes/fondo_menu.gif) repeat-x; width:269px !important; height:26px; border:0px; color:white !important; text-align:center; font-size:14px; }
+.botonQuiero:hover { background:url(../imagenes/fondo_boton_roll.gif) repeat-x; color:#FFF !important; } 
+.form-buttons-wrapper, form-input-wide, form-submit-button { width:269px !important;}
+
+/*Minihomes genericos
+_____________________________________________________________________________*/
+.MenuInterno {background:url(../imagenes/fondo_menu_interno.gif); float:left; width:212px; height:237px; }
+.LineaMenu { float:left; background:url(../imagenes/linea_menu.png);  width:212px; height:2px;}
+.itemMenu { float:left; padding:9px; text-align:center; font-size:12px; color:#CCC; text-decoration:none; width:192px; }
+.itemMenu:hover { color:#FFF;}
+.itemMenuAqui { float:left; padding:10px; text-align:center; font-size:14px; color:#FFF; text-decoration:none; width:192px; }
+
+
+/*Hotel Colonial
+_____________________________________________________________________________*/
+/* Mini Home Colonial*/
+.FotoDestacadoColonialUno { width:315px; height:123px; }
+.FotoDestacadoColonialDos { background: url(../imagenes/foto_destacado_colonial2.jpg) ; width:315px; height:123px; }
+/**/
+.bannerColonialQuienes { float:left; width:737px; height:237px;}
+.bannerColonialClub { float:left; width:737px; height:237px;}
+.bannerColonialHabitaciones { float:left; width:737px; height:237px;}
+.bannerColonialConvenciones { float:left; width:737px; height:237px;}
+.bannerColonialServicios { float:left; width:737px; height:237px; background:url(../imagenes/banner_colonial_servicios.jpg);}
+.bannerColonialFotografias { float:left; width:737px; height:237px;}
+.bannerColonialContactenos { float:left; width:737px; height:237px;}
+.FotoInternaColonialUno { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaColonialDos { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}	
+.FotoInternaColonialTres { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaColonialCuatro { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaColonialCinco { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+/* planes y servicios*/
+.FotoInternaColonialSeis { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/fotos_internas_colonial_luna.jpg); }
+.FotoInternaColonialSiete { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/fotos_internas_colonial_escapate.jpg); }
+.FotoInternaColonialOcho { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/fotos_internas_colonial_servicios.jpg); }
+.FotoInternaColonialNueve { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaColonialDiez { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/fotos_internas_colonial_convenciones.jpg); }
+/* fotografias*/
+.menuServicios { float:left; width:201px; border-right: 1px #CCC solid; padding-right:10px; text-align:right; margin-top:20px; padding-bottom:20px; height:auto; }
+.menuServicios h1 { color:#212F82; font-size:18px; font-weight:lighter; }
+.menuServicios a { font-size:14px !important; text-decoration:none; }
+.menuServicios a:hover { color:#212F82; text-decoration:underline; }
+.menuServicios h2 { color:#212F82; font-size:16px; font-weight:lighter; }
+.menuServicios span {color:#212F82; font-size:16px !important;}
+.textoServicios { float:left; padding:10px; width:717px; height:auto; font-size:16px !important; text-align:justify; }
+.textoServicios h1 { color:#212F82; font-size:28px; font-weight:lighter; }
+.textoServicios p { font-size:16px !important; }
+.textoServicios a { font-size:16px !important; text-decoration:none; }
+.textoServicios h2 { color:#212F82; font-size:20px; font-weight:lighter; }
+.textoServicios h3 { color:#212F82; font-size:18px; font-weight:lighter; }
+.textoServicios h3 a { color:#212F82; font-size:18px; font-weight:lighter; text-decoration:none; }
+.textoServicios h3 a:hover { color:#000; }
+.textoServicios span {color:#212F82; font-size:16px !important;}
+.arribaServicios { float:left; padding-top:10px; width:717px; height:auto; border-top: 1px #CCC solid; text-align:right; font-size:16px !important; clear:both; }
+.arribaServicios a:hover { color:#212F82; text-decoration:underline; }
+.arribaServicios a { text-decoration:none; }
+
+.arribaTarifas { float:left; padding-top:10px; width:700px; height:auto; border-top: 1px #CCC solid; text-align:right; font-size:16px !important; clear:both; }
+.arribaTarifas a:hover { color:#212F82; text-decoration:underline; }
+.arribaTarifas a { text-decoration:none; }
+
+/* galería de fotos*/
+.topFotos{ float:left; width:950px; height:10px; }
+.separadorPreview { float:left; height:110px; width:10px; margin-top:10px; }
+.fotosPreview { float:left; width:110px; height:110px; background:#900; margin-bottom:10px; }
+/* contactenos */
+.columnaIzq { float:left; width:505px; height:auto; margin-right:20px;  }
+.columnaIzq h1 { color:#212F82; font-size:28px; font-weight:lighter; }
+.columnaIzq h2 { color:#212F82; font-size:20px; font-weight:lighter; }
+.columnaIzq span {color:#212F82; font-size:16px !important;}
+.columnaIzq p { font-size:16px !important; }
+.columnaIzq a { font-size:16px !important; color:#212F82;}
+.columnaIzq a:hover { color:#212F82; }
+.columnaIzq ul { font-size:16px !important; }
+.columnaIzq li { font-size:16px !important; }
+.columnaIzq strong { font-size:16px !important; color:#212F82; }
+.columnaIzq h1 { color:#212F82; font-size:28px; font-weight:lighter; }
+.columnaIzq h2 { color:#212F82; font-size:20px; font-weight:lighter; }
+.columnaDer { float:left; width:425px; height:auto; }
+.columnaDer p { font-size:16px !important; }
+.columnaDer a { font-size:16px !important; }
+.columnaDer ul { font-size:16px !important; }
+.columnaDer li { font-size:16px !important; }
+.columnaDer strong { font-size:16px !important; color:#212F82; }
+.columnaDer span { font-size:16px !important; color:#212F82; }
+.columnaDer h1 { color:#212F82; font-size:28px; font-weight:lighter; }
+.columnaDer h2 { color:#212F82; font-size:20px; font-weight:lighter; }
+
+/*Hotel Lanceros
+_____________________________________________________________________________*/
+/* Mini Home Lanceros*/
+.FotoDestacadoLancerosUno { background: url(../imagenes/foto_destacado_lanceros1.jpg) ; width:315px; height:123px; }
+.FotoDestacadoLancerosDos {width:315px; height:123px; }
+/**/
+.bannerLancerosQuienes { float:left; width:737px; height:237px;}
+.bannerLancerosHabitaciones { float:left; width:737px; height:237px;}
+.bannerLancerosConvenciones { float:left; width:737px; height:237px;}
+.bannerLancerosServicios { float:left; width:737px; height:237px; background:url(../imagenes/banner_lanceros_servicios.jpg);}
+.bannerLancerosFotografias { float:left; width:737px; height:237px;}
+.bannerLancerosContactenos { float:left; width:737px; height:237px;}
+.FotoInternaLancerosUno { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaLancerosDos { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}	
+.FotoInternaLancerosTres { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/habitacion_estandar.jpg); }
+.FotoInternaLancerosCuatro { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaLancerosCinco { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaLancerosSeis { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaLancerosSiete { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaLancerosOcho { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+
+
+/*Hotel Peñalisa
+_____________________________________________________________________________*/
+/* Mini Home Peñalisa*/
+.FotoDestacadoPenalisaUno {width:315px; height:123px; }
+.FotoDestacadoPenalisaDos {width:315px; height:123px; }
+/**/
+.bannerPenalisaQuienes { float:left; width:737px; height:237px;}
+.bannerPenalisaHabitaciones { float:left; width:737px; height:237px;}
+.bannerPenalisaConvenciones { float:left; width:737px; height:237px; background:url(../);}
+.bannerPenalisaServicios { float:left; width:737px; height:237px; background:url(../imagenes/banner_penalisa_servicios.jpg);}
+.bannerPenalisaFotografias { float:left; width:737px; height:237px; background:url(../);}
+.bannerPenalisaContactenos { float:left; width:737px; height:237px; background:url(../);}
+.FotoInternaPenalisaUno { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaDos { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaTres { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaCuatro { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaCinco { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaSeis { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaSiete { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaOcho { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaNueve { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaDiez { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaPenalisaOnce { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+
+
+
+/**/
+.Celdas {font-size:14px !important; background:#eee; text-align:left !important; padding:5px;  }
+.CeldasTitulos { color:#212F82; font-size:14px; font-weight:lighter; background:#ccc; text-align:left !important; padding:5px; }
+/**/
+.Celdas2 {font-size:14px !important; background:#eee; text-align:right !important; padding:5px;  }
+.CeldasTitulos2 { color:#212F82; font-size:14px; font-weight:lighter; background:#ccc; text-align:center !important; padding:5px; }
+
+/*Hotel Bosques de Athán
+_____________________________________________________________________________*/
+/* Mini Bosques de Athán*/
+.FotoDestacadoBosquesUno { background: url(../imagenes/foto_destacado_bosques1.jpg) ; width:315px; height:123px; }
+.FotoDestacadoBosquesDos {width:315px; height:123px; }
+/**/
+.bannerBosquesQuienes { float:left; width:737px; height:237px;}
+.bannerBosquesHabitaciones { float:left; width:737px; height:237px;}
+.bannerBosquesConvenciones { float:left; width:737px; height:237px;}
+.bannerBosquesServicios { float:left; width:737px; height:237px; background:url(../imagenes/banner_bosques_servicios.jpg);}
+.bannerBosquesFotografias { float:left; width:737px; height:237px;}
+.bannerBosquesContactenos { float:left; width:737px; height:237px;}
+.FotoInternaBosquesUno { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/wetransfer-909be6/ALPINA.bmp); }
+.FotoInternaBosquesDos { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/wetransfer-909be6/SS ANDINAS.bmp); }	
+.FotoInternaBosquesTres { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/wetransfer-909be6/SUI ANDINAS.bmp); }
+.FotoInternaBosquesCuatro { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/wetransfer-909be6/SM ANDINAS.jpg); }
+.FotoInternaBosquesCinco { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/fotos_internas_bosques_convenciones1.jpg); }
+.FotoInternaBosquesSeis { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/fotos_internas_bosques_convenciones2.jpg); }
+.FotoInternaBosquesSiete { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px; background:url(../imagenes/fotos_internas_bosques_convenciones3.jpg); }
+
+/*Hotel Alcaraván
+_____________________________________________________________________________*/
+/* Mini Alcaraván */
+.FotoDestacadoAlcaravanUno { background: url(../imagenes/foto_destacado_alcaravan1.jpg) ; width:315px; height:123px; }
+.FotoDestacadoAlcaravanDos {width:315px; height:123px; }
+/**/
+.bannerAlcaravanQuienes { float:left; width:737px; height:237px;}
+.bannerAlcaravanHabitaciones { float:left; width:737px; height:237px;}
+.bannerAlcaravanConvenciones { float:left; width:737px; height:237px;}
+.bannerAlcaravanServicios { float:left; width:737px; height:237px; background:url(../imagenes/banner_alcaravan_servicios.jpg);}
+.bannerAlcaravanFotografias { float:left; width:737px; height:237px;}
+.bannerAlcaravanContactenos { float:left; width:737px; height:237px;}
+.FotoInternaAlcaravanUno { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaAlcaravanDos { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}	
+.FotoInternaAlcaravanTres { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaAlcaravanCuatro { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaAlcaravanCinco { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+.FotoInternaAlcaravanSeis { float:left; margin-right:20px; margin-bottom:20px; width:350px; height:225px;}
+
+/*Planes y servicios
+_____________________________________________________________________________banner_planes.jpg*/
+.bannerPlanes { float:left; width:950px; height:237px; background:url(../imagenes/banner-planes-escapate.gif);}
+
+/* Agencia de Viajes
+_____________________________________________________________________________banner_agencia.jpg*/
+.bannerAgencia { float:left; width:950px; height:237px;}
+
+/* Tarifas
+_____________________________________________________________________________banner_tarifas.jpg*/
+.bannerTarifas { float:left; width:950px; height:237px; background:url(../imagenes/banner-planes-escapate.gif);}
+
+/* Contáctenos
+_____________________________________________________________________________banner_contactenos.jpg*/
+.bannerContactenos { float:left; width:950px; height:237px;}
+
+/*Faq
+__________________________________________________________________________banner_faq.jpg*/
+.bannerFaq { float:left; width:950px; height:237px;}
+
+/* Mapa del sitio
+_____________________________________________________________________________banner_mapa.jpg*/
+.bannerMapa { float:left; width:950px; height:237px;}
+.textoMapa { float:left; margin-left:55px; padding:10px; width:400px; height:auto; font-size:16px !important; text-align:justify; }
+.textoMapa h1 { color:#212F82; font-size:28px; font-weight:lighter; }
+.textoMapa h1 a { color:#212F82; font-size:28px; font-weight:lighter; text-decoration:none; }
+.textoMapa h1 a:hover { color:#000; }
+.textoMapa p { font-size:16px !important; }
+.textoMapa p a { font-size:16px !important; text-decoration:none; }
+.textoMapa p a:hover { color:#212F82; }
+.textoMapa h2 { color:#212F82; font-size:20px; font-weight:lighter; }
+.textoMapa h2 a { color:#212F82; font-size:20px; font-weight:lighter; text-decoration:none; }
+.textoMapa h2 a:hover { color:#000; }
+.textoMapa h3 { color:#212F82; font-size:18px; font-weight:lighter; }
+.textoMapa h3 a { color:#212F82; font-size:18px; font-weight:lighter; text-decoration:none; }
+.textoMapa h3 a:hover { color:#000; }
+.textoMapa span {color:#212F82; font-size:16px !important;}
+
+
+/*Catering
+_____________________________________________________________________________*/
+/* Mini Home Catering*/
+.FotoDestacadoCateringUno {width:315px; height:123px; }
+.FotoDestacadoCateringDos {idth:315px; height:123px; }
+/**/
+.bannerCateringQuienes { float:left; width:737px; height:237px;}
+.bannerCateringDonde { float:left; width:737px; height:237px;}
+.bannerCateringClientes { float:left; width:737px; height:237px;}
+.bannerCateringServicios { float:left; width:737px; height:237px;}
+.bannerCateringContactenos { float:left; width:737px; height:237px;}
+.FotoHomeCatering { float:left; width:279px; height:279px; margin-bottom:20px; margin-top:20px;}
+.textoCateringQuienes { margin-left: 207px; padding:10px; width:717px; height:auto; font-size:16px !important; text-align:justify; }
+.textoCatering { margin-left: 210px; padding:10px; width:717px; height:auto; font-size:16px !important; text-align:justify; }
+.textoCatering h1 { color:#212F82; font-size:28px; font-weight:lighter; }
+.textoCatering h1 a { color:#212F82; font-size:28px; font-weight:lighter; text-decoration:none; }
+.textoCatering h1 a:hover { color:#000; }
+.textoCatering p { font-size:15px !important; }
+.textoCatering li { font-size:16px !important; }
+.textoCatering p a { font-size:16px !important; text-decoration:none; }
+.textoCatering p a:hover { color:#212F82; }
+.textoCatering h2 { color:#212F82; font-size:18px; font-weight:lighter;}
+.textoCatering h2 a { color:#212F82; font-size:20px; font-weight:lighter; text-decoration:none; }
+.textoCatering span {color:#212F82; font-size:16px !important;}
+.textoCatering h2 a:hover { color:#000; }
+.textoCat { font-size:14px !important; }
+.MapaCatering { float:left; padding-top:10px; width:425px; height:365px; padding-bottom:10px; }
+.contactenosCatering { float:left; padding-top:10px; padding-left:10px; width:415px; height:auto; padding-bottom:10px;  }
+.contactenosCatering { font-size:16px; }
+.botonContactoCatering {  margin-left:0px !important; background: url(../imagenes/fondo_menu.gif) repeat-x; width:200px !important; height:26px; border:0px; color:white !important; text-align:center; font-size:14px; }
+
+.botonContactoCatering:hover { background:url(../imagenes/fondo_boton_roll.gif) repeat-x; color:#FFF !important; } 
+.textoCateringDonde { float:left; padding-left:30px; padding-top:30px; width:492px; height:auto; }
+.textoCateringDonde h2 { color:#000; font-size:20px; font-weight:lighter; }
+.textoCateringDonde h2 span { color:#212F82; font-size:20px; font-weight:lighter; }
+.textoCateringDonde h1 { color:#212F82; font-size:28px; font-weight:lighter; }
+.textoCateringDonde p { font-size:16px; font-weight:lighter; }
+
+
+/*Reservas
+__________________________________________________________________________*/
+.ZonaReservas2 { margin:0px auto; width:910px;  padding:10px; font-size:16px;  }
+.ZonaReservas2 h1 { color:#212F82; font-size:28px; font-weight:lighter; }
+.ZonaReservas2 h2 { color:#212F82; font-size:20px; font-weight:lighter; }
+.ZonaReservas2 p { text-align:justify; font-size:16px !important; }
+.ZonaReservas2 li { font-size:16px !important; }
+.ZonaReservas2 strong {
+	font-size: 16px !important;
+	color: #004A99;
+}
+.ZonaReservas2 a { font-size:16px !important; text-decoration:none; }
+.ZonaReservas2 span { font-size:16px !important; color:#212F82; }
+.TextoReservas2 { float:left; width:580px; padding-bottom:10px; padding-top:5px; margin-bottom:5px; font-size:18px; margin-left: 150px;	}
+
+.textoHotel2 { float:left; width:169px; height:20px; padding-top:2px;  margin-right:10px; font-size:13px; text-align:center; color:#212F82; text-decoration:none; }
+.ZonaReservas2 a { color:#212F82; }
+.ZonaReservas2 a:hover { color:#000; text-decoration:underline; }
+
+.TitulosReservas { margin:0px auto; width:940px; height:28px; background:#b7b7b7; color:#FFF; font-size:18px; font-weight:normal; font-family:Arial, Helvetica, sans-serif; padding-top:6px; padding-left:10px; }
+.TitulosReservas h1 {}
+.ZonaReservas { margin:0px auto; width:930px;  padding:10px; font-size:14px;  }
+.numeroRojo { float:left; margin:5px; padding-top:3px; width:20px; height:17px; background: #9c1621; font-size:12px; color:#FFF; text-align:center;} 
+.numeroGris { float:left; margin:5px; padding-top:3px; width:20px; height:17px; background: #b7b7b7; font-size:12px; color:#FFF; text-align:center;}
+.ZonaNumeros { float:left; border-bottom: 1px solid #9c1621; width:930px; padding-bottom:5px; margin-bottom:5px; }
+.tituloPaso { float:left; color:#9c1621; font-size: 18px; padding-top:6px; width:780px; text-align:right;  }
+.tipoReserva { float:left; width:930px; border-bottom: 1px solid #ccc; padding-bottom:10px; padding-top:5px; margin-bottom:5px;	}
+.formas { background:#e5e5e5; border:#999 solid 1px; color:#9c1621; font-size:12px;}
+.espacioFotos{ float:left; width:200px; height:115px; }
+.fotoReservas { float:left; width:915px; height:auto; }
+.fotoLanceros { background:float:left; width:169px; height:106px; border:solid 1px #9c1621; margin-right:10px; margin-bottom:20px; }
+.fotoPenalisa {float:left; width:169px; height:106px; border:solid 1px #9c1621; margin-right:10px; margin-bottom:20px; }
+.fotoBosques {float:left; width:169px; height:106px; border:solid 1px #9c1621; margin-right:10px; margin-bottom:20px;}
+.fotoAlcaravan {float:left; width:169px; height:106px; border:solid 1px #9c1621; margin-right:10px; margin-bottom:20px; }
+.fotoColonial { background: url(../imagenes/foto_reservas_colonial.jpg); float:left; width:169px; height:106px; border:solid 1px #9c1621; margin-right:10px; margin-bottom:20px; }
+.fotoDetalleColonial { background:url(../imagenes/foto_reservas_detalle_cuarto.jpg); width:169px; height:106px; border:solid 1px #9c1621; margin-right:10px;  float:left; }
+.textoHotel { float:left; width:113px; height:20px; padding-top:2px;  margin-right:70px;  }
+.TextoSolo { float:left; width:930px; padding-bottom:10px; padding-top:5px; margin-bottom:5px;	}
+.TextoSolo2 { float:left; width:930px; padding-bottom:10px; padding-top:5px; margin-bottom:5px; border-bottom: #9c1621 dotted 1px; 	}
+.TextoSolo2 span { color:#9c1621;}
+.TextoDetalles{ float:left; width:245px; height:115px; border-right: #9c1621 dotted 1px; margin-right:5px; }
+.TextoDetalles2{ float:left; width:240px; height:115px; text-align:right; border-right: #9c1621 dotted 1px; margin-right:5px; padding-right:5px;  }
+.TextoDetalles3{ float:left; width:240px; height:200px; text-align:right; border-right: #9c1621 dotted 1px; margin-right:5px;  padding-right:5px; }
+.TextoDetalles3 span { color:#9c1621;}
+.TextoDetalles4{ float:left; width:240px; height:200px; text-align:left; border-right: #9c1621 dotted 1px; margin-right:5px;  padding-right:5px; }
+.TextoDetalles4 span { color:#9c1621;}
+.TextoDetalles5{ float:left; width:415px; height:200px; text-align:left; border-right: #9c1621 dotted 1px; margin-right:5px;  padding-right:5px; }
+.itemDetalle { float:left; width:130px; height:20px; }
+.itemDetalle2 { float:left; width:110px; height:20px; text-align:right; color:#9c1621;}
+.itemDetalle2 strong {color:#9c1621;}
+.item { float:left;  padding-right:20px;  }
+.ZonaBotones { margin:0px auto; width:950px; height:30px; background:#b7b7b7; color:#FFF; padding-top:5px;  text-align:center; clear:both; }
+.Boton { float:right; background:url(../imagenes/fondo_menu.gif) repeat-x; text-align:center; color:#cb8a8f; font-size:14px; height: 20px; width:100px; padding-top:5px; margin-right:5px; }
+.Boton:hover { background: url(../imagenes/fondo_boton_roll.gif); color:#FFF; }
+.ItemFormulario { float:left; width:180px; height:18px; padding-top:2px; }
+.ItemFormulario span { color:#9c1621;}
+.ItemCampos { float:left; width:280px; height:20px; }
+.BotonPSE { float:right; background:url(../imagenes/fondo_menu.gif) repeat-x; text-align:center;  color:#cb8a8f; font-size:14px; height: 20px; width:150px; padding-top:5px; margin-right:5px; }
+.BotonPSE:hover { background: url(../imagenes/fondo_boton_roll.gif); color:#FFF; }
+.logoPSE { background:url(../imagenes/pse.gif); width: 117px; height: 125px; float:left;}
+
+.Destacados p { font-family:Arial, Helvetica, sans-serif; color:#666; font-size:12px; text-align:justify; 
+}
+
+
+
+/* tarifador*_____________________________________________________________________________*/
+
+.estiloForm { /*formulario*/
+	font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	width: 450px;
+	
+	}
+
+.general_tarifador { /*contenedor general*/
+	width: 950px; 
+	height: auto;
+	float:center;  
+}
+
+.colForm {/*columna del formulario*/ 
+	width: 400px; 
+	height: auto;
+	float:left;
+	padding-left:50px;	
+	 
+}
+
+.colder { /*columna derecha*/
+	width: 475px; 
+	height: auto;
+	float:left;
+	margin-top: 20px;
+	
+}
+	
+.colTexto {/*textos columna derecha*/
+	width: 435px;
+	font-size:12px;
+	padding:20px 20px 20px 20px;
+	float:right;
+	margin-bottom:20px;
+	margin-top:30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	-moz-border-radius:6px;
+ 	-webkit-border-radius:6px;
+ 	-o-border-radius:6px;
+	 border-radius:6px;
+	box-shadow: 0px 5px 10px #B5C1C5, 0 0 0 10px #EEF5F7 inset;
+}
+
+.colTexto h3{/*textos columna derecha*/
+	font-size:18px;
+	color:#212F82;
+}
+
+.formTarif h1 {/*textos titulos*/
+	color: #212F82;
+	font-weight: lighter;
+	font-size: 20px;
+}
+
+label{/*campos del formulario*/
+	margin-right:10px;
+	color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	}
+	
+option{/*opciones de formulario*/
+	margin-right:10px;
+	color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	}
+	
+select{/*campos de casillas del formulario*/
+	margin-right:10px;
+	color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}	
+		
+	
+fieldset{ /*espaciados entre campos del formulario*/
+	margin:1em 0;border:none;
+	color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	}
+	
+.formTarif h2{/*texto destacado dentro del formulario*/
+	font-size:25px;
+	color:#212F82;
+	font-weight:lighter;
+	font-family:Arial, Helvetica, sans-serif;
+}
+	
+.colTexto strong {/*textos en negritra*/
+	font-size: 12px;
+	color: #004A99;
+	font-weight: bold;
+}
+
+.advertencia{/*texto que sale como advertencia en el formulario*/
+	margin-left:10px;
+	color: #212F82;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+	}
+	
+.advertencia i{/*advertencia en itálica azul*/
+	color:#212F82;
+}	
+	
+	
+.tex_resultado {/*textos más grand de la cotización*/
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #212F82;
+	text-align: left;
+	white-space: normal;
+	padding-top:20px;
+	float: left;
+	clear: left;
+	width: 350px;
+	line-height: 18px;
+}
+
+.tex_resultado strong{/*negrita del valor de la cotización*/
+	font-weight:bold;
+	font-size: 24px;
+	color: #212F82;
+}
+
+
+.clr_tarifador {/*cierre de estilo*/
+	clear:both;
+	height: 0;
+}
+
+.Aqui {/*estilos de los botones del formulario*/
+	float: left;
+	margin-top: 20px;
+	margin-bottom:15px;
+	background-color:#233F7B;
+	color: #fff;
+	padding: 6px 6px;
+	font-size:14px;
+	cursor:pointer;
+	-moz-border-radius:6px;
+ 	-webkit-border-radius:6px;
+ 	-o-border-radius:6px;
+	 border-radius:6px;
+}
+
+.negritaCifra{
+	font-size:16px;
+	font-weight:bold;
+	color:#233F7B;
+}
+
+.fieldset p{
+	margin-left:10px;
+	color: #666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+
+
+/*nuevo footer Buro
+____________________________________________________________________________________________________________________*/
+.footer{
+	background-image: url(../imagenes/footer_hoteles.png); 
+	clear: both;
+    height: 97px;
+    margin: 0 auto;
+    width: 950px;
+	margin-top:50px;
+	
+}
+
+.tex_footer h3{
+	font-size:11px;
+	color: #fff;
+    margin-top: 14px;
+	margin-left:235px;
+    width: 450px;
+	text-align:center;
+}
+
+
+.tex_footer_01 h3{
+	font-size:11px;
+	color: #fff;
+    margin-top:-2px;
+	margin-left:200px;
+	cursor:pointer;
+    width:275px;
+	float:left;
+	text-align:center;
+}
+
+
+.tex_footer_02 h3{
+	font-size:11px;
+	color: #fff;
+    margin-top:-24px;
+	margin-left:540px;
+	cursor:pointer;
+    width: 130px;
+	float:left;
+	text-align:center;
+}
+
+.tex_footer a{
+	color:#fff;
+	text-decoration:none;
+}
+
+.logo_buro{	
+	margin-top: -8px;
+	position: !important;
+	float:rigth;
+	cursor:pointer;
+	margin-left:445px;
+	margin-right:800px;
+
+}
+
+.logo_buro:hover {
+opacity:0.7;
+filter:alpha(opacity=70);
+
+}
+
+.super{
+	margin-top: 10px;
+	position:relative;
+	cursor:pointer;
+	margin-left:20px;
+	float:left;
+}	
+
+.menu_footer{
+	clear: both;
+    color: #005AA9;
+    font-size: 10px;
+    height: 19px;
+    padding-top: 6px;
+
+	text-align:center;
+}
+.menu_footer a {
+    color: #333;
+    font-size: 10px !important;
+    text-decoration: none;
+}
+.menu_footer a:hover {
+    color: #FF0;
+    font-size: 10px !important;
+    text-decoration: none;
+}
+
+.menu_footer strong {
+	color: #333;
+	font-size: 10px !important;
+	font-weight:bold;
+    
+}
+
+.espacioDiv{
+	padding:10px;
+}
+
+
+******************************
+.texto_tarifas { float:left; font-size: 20px; color: #666; text-align:center; margin-left: 300px; margin-top: 100px;  }
+.texto_tarifas span {color:#09F; font-weight:bold; }
+.texto_tarifas h1{ float:left; font-size: 30px; color: #212F82; width: 900px; text-align:center; margin: 0 auto; margin-top: 50px;  }
+.texto_tarifas h2 {float:left; font-size: 20px; color: #666; width: 900px; text-align:center; margin: 0 auto; margin-top: 40px; margin-bottom:25px;}
+.actualizando{float:left; margin-left:390px; margin-top: 10px; margin-bottom: 100px;}
+
+
+
+h3 {
+	font-size: 12px;
+}
+.tex_footer h3 {
+	font-size: 12px;
+}
+
+.sub-menu {
+  position:absolute;
+  bottom: -58px;
+  right: 0;
+  background: url(https://www.hotelescolsubsidio.com/imagenes/fondo_menu.gif);
+  z-index: 9999;
+  background-size: contain;
+  display: none;
+}
+
+.sub-menu a {
+  display: block;
+  border: none;
+  color: #6F8AAA;
+  padding: 10px 10px 0;
+}
+.sub-menu a:last-child {
+  padding-bottom: 10px;
+}
+.sub-menu a:hover {
+  color: #D9E6F1;
+}
